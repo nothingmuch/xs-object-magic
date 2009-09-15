@@ -1,4 +1,3 @@
-#include "ppport.h"
 #ifndef __XS_OBJECT_MAGIC_H__
 #define __XS_OBJECT_MAGIC_H__
 
