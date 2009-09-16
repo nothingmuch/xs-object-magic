@@ -98,7 +98,7 @@ XS::Object::Magic - Opaque, extensible XS pointer backed objects using C<sv_magi
 
 =head1 DESCRPTION
 
-This way of associating structs with Perl space objects is designed to supersed
+This way of associating structs with Perl space objects is designed to supercede
 Perl's builtin C<T_PTROBJ> with something that is designed to be:
 
 =over 4
@@ -115,7 +115,7 @@ otherwise), while still having instance data in regular hashes.
 
 The C pointer is neither visible nor modifiable from Perl space.
 
-This prevents accidental corruption which leads could segfaults using
+This prevents accidental corruption which could lead to segfaults using
 C<T_PTROBJ> (e.g. C<$$ptr_obj = 0>).
 
 =back
@@ -126,7 +126,7 @@ C<T_PTROBJ> (e.g. C<$$ptr_obj = 0>).
 
 =item void *xs_object_magic_get_struct_rv(aTHX_ SV *sv)
 
-When called on the object reference will check that the C<sv> is a reference,
+When called on the object reference it will check that the C<sv> is a reference,
 dereference it and return the associated pointer using
 C<xs_object_magic_get_struct>.
 
