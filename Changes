@@ -1,0 +1,7 @@
+0.02
+	- the header no longer includes ppport.h
+	- add missing aTHX_
+	- doc fixes from Jeremiah Foster
+
+0.01
+	- initial release
