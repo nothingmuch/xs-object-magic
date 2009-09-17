@@ -9,6 +9,8 @@ use ExtUtils::Depends;
 name 'XS-Object-Magic';
 all_from 'lib/XS/Object/Magic.pm';
 
+requires_external_cc;
+
 requires 'parent';
 configure_requires 'ExtUtils::Depends' => 0.302; #minimum version that works on Win32+gcc
 test_requires 'Test::More';
