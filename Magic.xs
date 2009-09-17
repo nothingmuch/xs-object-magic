@@ -115,7 +115,7 @@ PROTOTYPES: DISABLE
 SV *
 new(char *class)
 	CODE:
-		RETVAL = xs_object_magic_create((void *)test_new(), gv_stashpv(class, 0));
+		RETVAL = xs_object_magic_create(aTHX_ (void *)test_new(), gv_stashpv(class, 0));
 	OUTPUT: RETVAL
 
 I32
