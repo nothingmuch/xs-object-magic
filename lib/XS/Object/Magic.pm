@@ -68,7 +68,9 @@ XS::Object::Magic - Opaque, extensible XS pointer backed objects using C<sv_magi
 
 	void foo (SV *self)
 		PREINIT:
-			my_struct_t *thingy = xs_object_magic_get_struct_rv(aTHX_ self)
+			my_struct_t *thingy;
+		INIT:
+			thingy; = xs_object_magic_get_struct_rv(aTHX_ self);
 		CODE:
 			my_struct_foo(thingy); /* delegate to C api */
 
