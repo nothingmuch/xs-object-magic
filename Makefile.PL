@@ -3,6 +3,7 @@ use strict;
 use warnings;
 
 
+use lib '.';
 use inc::Module::Install 0.91;
 use ExtUtils::Depends;
 
